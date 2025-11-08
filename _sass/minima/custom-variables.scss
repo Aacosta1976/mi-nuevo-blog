@@ -1,0 +1,48 @@
+@use "sass:color";
+
+/* ----------------------------------------------------------
+   Variables personalizadas del tema Minima (actualizadas)
+   ---------------------------------------------------------- */
+
+$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
+
+$code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace !default;
+
+$base-font-size: 16px !default;
+$base-font-weight: 400 !default;
+$small-font-size: $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+$spacing-unit: 30px !default;
+$table-text-align: left !default;
+
+$content-width: 800px !default;
+$on-palm: 600px !default;
+$on-laptop: 800px !default;
+$on-medium: $on-palm !default;
+$on-large: $on-laptop !default;
+
+/* ----------------------------------------------------------
+   Colores principales
+   ---------------------------------------------------------- */
+
+$text-color: #111 !default;
+$background-color: #fff !default;
+$brand-color: #2a7ae2 !default;
+$grey-color: #828282 !default;
+
+/* Uso de la funcion moderna de Sass */
+$grey-color-light: color.scale($grey-color, $lightness: 40%) !default;
+$grey-color-dark: color.scale($grey-color, $lightness: -25%) !default;
+
+$heading-color: #111 !default;
+$link-base-color: $brand-color !default;
+$link-visited-color: $link-base-color !default;
+$link-hover-color: $link-base-color !default;
+
+$code-background-color: #f6f8fa !default;
+
+/* ----------------------------------------------------------
+   Breakpoints para diseno responsive
+   ---------------------------------------------------------- */
+
+$breakpoints: ( small: 480px, medium: 768px, large: 1024px, xlarge: 1280px ) !default;

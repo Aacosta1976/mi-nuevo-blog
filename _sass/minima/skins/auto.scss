@@ -1,0 +1,234 @@
+@use "sass:color";
+@use "minima/skins/dark";
+@charset "utf-8";
+
+// Configuración del esquema de color
+$color-scheme-auto: true !default;
+$color-scheme-dark: false !default;
+// Modo claro
+$lm-brand-color: #818181 !default;
+$lm-brand-color-light: color.adjust($lm-brand-color, $lightness: 40%) !default;
+$lm-brand-color-dimmed: color.adjust($lm-brand-color, $lightness: -11%) !default;
+$lm-brand-color-dark: color.adjust($lm-brand-color, $lightness: -25%) !default;
+
+$lm-site-title-color: $lm-brand-color-dark !default;
+
+$lm-heading-color: #111111 !default;
+$lm-text-color: $lm-brand-color-dark !default;
+$lm-background-color: #fdfdfd !default;
+$lm-code-background-color: #f6f8fa !default;
+$code-background-color: $lm-code-background-color !default;
+
+$lm-link-base-color: #1e69d8 !default;
+$lm-link-visited-color: color.adjust($lm-link-base-color, $lightness: -15%) !default;
+$lm-link-hover-color: $lm-text-color !default;
+
+$lm-border-color-01: color.adjust($lm-brand-color, $lightness: 40%) !default;
+$lm-border-color-02: color.adjust($lm-brand-color, $lightness: 35%) !default;
+$lm-border-color-03: color.adjust($lm-brand-color, $lightness: -25%) !default;
+
+$lm-table-zebra-color: color.adjust($lm-background-color, $lightness: 4%) !default;
+$lm-table-text-color: color.adjust($lm-heading-color, $lightness: 18%) !default;
+$lm-table-header-bg-color: color.adjust($lm-brand-color, $lightness: 43%) !default;
+$lm-table-header-border: color.adjust($lm-brand-color, $lightness: 37%) !default;
+$lm-table-border-color: $lm-border-color-01 !default;
+// Estilos de resaltado para modo claro
+@mixin lm-highlight {
+    .highlight {
+        .err {
+            color: #e3d2d2;
+            background-color: #a61717
+        }
+        // Error
+        .c, .cm, .cp, .c1, .cs {
+            color: #9c9996;
+            font-style: italic
+        }
+        // Comentarios
+        .gd, .gd .x {
+            color: #e25050
+        }
+        // Deleted
+        .gi, .gi .x {
+            color: #3f993f
+        }
+        // Inserted
+        .go {
+            color: #888888
+        }
+
+        .gp {
+            color: #555555
+        }
+
+        .gr, .gt {
+            color: #aa0000
+        }
+
+        .gs {
+            font-weight: bold
+        }
+
+        .gu {
+            color: #aaaaaa
+        }
+
+        .k, .kc, .kd, .kp, .kr {
+            color: #cf222e
+        }
+
+        .kt {
+            color: #445588
+        }
+
+        .n {
+            color: #111111
+        }
+
+        .na, .nc, .ni, .nn {
+            color: #097e39
+        }
+
+        .nb, .bp {
+            color: #cf222e
+        }
+
+        .ne {
+            color: #990000
+        }
+
+        .nf {
+            color: #2c7d74
+        }
+
+        .no {
+            color: #a61154
+        }
+
+        .nt {
+            color: #b81e63
+        }
+
+        .nv, .vc, .vg, .vi {
+            color: #752a75
+        }
+
+        .o, .ow {
+            color: #0842a0
+        }
+
+        .m, .mf, .mh, .mi, .il, .mo {
+            color: #005a99
+        }
+
+        .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx {
+            color: #914d08
+        }
+
+        .sr {
+            color: #009926
+        }
+
+        .ss {
+            color: #0842a0
+        }
+
+        .w {
+            color: #bbbbbb
+        }
+
+        .lineno, .gl {
+            color: #9c9996
+        }
+
+        .hll {
+            background-color: #ffffcc
+        }
+    }
+}
+// Variables globales para modo clásico
+$brand-color: $lm-brand-color;
+$brand-color-light: $lm-brand-color-light;
+$brand-color-dimmed: $lm-brand-color-dimmed;
+$brand-color-dark: $lm-brand-color-dark;
+
+$site-title-color: $lm-site-title-color;
+
+$heading-color: $lm-heading-color;
+$text-color: $lm-text-color;
+$background-color: $lm-background-color;
+$code-background-color: $lm-code-background-color;
+
+$link-base-color: $lm-link-base-color;
+$link-visited-color: $lm-link-visited-color;
+$link-hover-color: $lm-link-hover-color;
+
+$border-color-01: $lm-border-color-01;
+$border-color-02: $lm-border-color-02;
+$border-color-03: $lm-border-color-03;
+
+$table-text-color: $lm-table-text-color;
+$table-zebra-color: $lm-table-zebra-color;
+$table-header-bg-color: $lm-table-header-bg-color;
+$table-header-border: $lm-table-header-border;
+$table-border-color: $lm-table-border-color;
+@if $color-scheme-auto {
+    :root {
+        --minima-brand-color: #{$lm-brand-color};
+        --minima-brand-color-light: #{$lm-brand-color-light};
+        --minima-brand-color-dimmed: #{$lm-brand-color-dimmed};
+        --minima-brand-color-dark: #{$lm-brand-color-dark};
+        --minima-site-title-color: #{$lm-site-title-color};
+        --minima-heading-color: #{$lm-heading-color};
+        --minima-text-color: #{$lm-text-color};
+        --minima-background-color: #{$lm-background-color};
+        --minima-code-background-color: #{$lm-code-background-color};
+        --minima-link-base-color: #{$lm-link-base-color};
+        --minima-link-visited-color: #{$lm-link-visited-color};
+        --minima-link-hover-color: #{$lm-link-hover-color};
+        --minima-border-color-01: #{$lm-border-color-01};
+        --minima-border-color-02: #{$lm-border-color-02};
+        --minima-border-color-03: #{$lm-border-color-03};
+        --minima-table-text-color: #{$lm-table-text-color};
+        --minima-table-zebra-color: #{$lm-table-zebra-color};
+        --minima-table-header-bg-color: #{$lm-table-header-bg-color};
+        --minima-table-header-border: #{$lm-table-header-border};
+        --minima-table-border-color: #{$lm-table-border-color};
+    }
+
+    @include lm-highlight;
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            // Aquí puedes redefinir variables CSS para modo oscuro si quieres
+        }
+
+        @include dm-highlight;
+    }
+
+    // Reasignación de variables Sass desde CSS custom properties
+    $brand-color: var(--minima-brand-color);
+    $brand-color-light: var(--minima-brand-color-light);
+    $brand-color-dimmed: var(--minima-brand-color-dimmed);
+    $brand-color-dark: var(--minima-brand-color-dark);
+
+    $site-title-color: var(--minima-site-title-color);
+    $heading-color: var(--minima-heading-color);
+    $text-color: var(--minima-text-color);
+    $background-color: var(--minima-background-color);
+    $code-background-color: var(--minima-code-background-color);
+
+    $link-base-color: var(--minima-link-base-color);
+    $link-visited-color: var(--minima-link-visited-color);
+    $link-hover-color: var(--minima-link-hover-color);
+
+    $border-color-01: var(--minima-border-color-01);
+    $border-color-02: var(--minima-border-color-02);
+    $border-color-03: var(--minima-border-color-03);
+
+    $table-text-color: var(--minima-table-text-color);
+    $table-zebra-color: var(--minima-table-zebra-color);
+    $table-header-bg-color: var(--minima-table-header-bg-color);
+    $table-header-border: var(--minima-table-header-border);
+    $table-border-color: var(--minima-table-border-color);
+}

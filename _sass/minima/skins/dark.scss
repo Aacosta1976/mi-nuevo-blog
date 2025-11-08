@@ -1,0 +1,44 @@
+@use "sass:color";
+@charset "utf-8";
+
+// Activar solo el modo oscuro
+$color-scheme-auto: false;
+$color-scheme-dark: true;
+
+// Colores base
+$dm-brand-color: #999999 !default;
+$dm-brand-color-light: color.adjust($dm-brand-color, $lightness: 5%) !default;
+$dm-brand-color-dimmed: color.adjust($dm-brand-color, $lightness: -8%) !default;
+$dm-brand-color-dark: color.adjust($dm-brand-color, $lightness: -43%) !default;
+
+// Tipografía y texto
+$dm-site-title-color: $dm-brand-color-light !default;
+$dm-heading-color: #bbbbbb !default;
+$dm-text-color: color.adjust($dm-heading-color, $lightness: -15%) !default;
+
+// Fondo y código
+$dm-background-color: #181818 !default;
+$dm-code-background-color: #222222 !default;
+
+// Enlaces
+$dm-link-base-color: #5691cd !default;
+$dm-link-visited-color: #80bbff !default;
+$dm-link-hover-color: $dm-text-color !default;
+
+// Bordes
+$dm-border-color-01: $dm-brand-color-dark !default;
+$dm-border-color-02: $dm-brand-color-light !default;
+$dm-border-color-03: $dm-brand-color !default;
+
+// Tablas
+$dm-table-text-color: $dm-text-color !default;
+$dm-table-zebra-color: color.adjust($dm-background-color, $lightness: 4%) !default;
+$dm-table-header-bg-color: color.adjust($dm-background-color, $lightness: 10%) !default;
+$dm-table-header-border: color.adjust($dm-background-color, $lightness: 15%) !default;
+$dm-table-border-color: $dm-border-color-01 !default;
+
+// Estilos de resaltado para código (opcional)
+.highlight {
+    background-color: $dm-code-background-color;
+    color: $dm-text-color;
+}

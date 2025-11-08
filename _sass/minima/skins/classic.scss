@@ -1,0 +1,44 @@
+@use "sass:color";
+@charset "utf-8";
+
+// Desactiva los otros esquemas de color
+$color-scheme-auto: false;
+$color-scheme-dark: false;
+
+// Colores base
+$brand-color: #818181 !default;
+$brand-color-light: color.adjust($brand-color, $lightness: 40%) !default;
+$brand-color-dimmed: color.adjust($brand-color, $lightness: -11%) !default;
+$brand-color-dark: color.adjust($brand-color, $lightness: -25%) !default;
+
+// Tipografía y texto
+$site-title-color: $brand-color-dark !default;
+$heading-color: #111111 !default;
+$text-color: $brand-color-dark !default;
+
+// Fondo y código
+$background-color: #fdfdfd !default;
+$code-background-color: #f6f8fa !default;
+
+// Enlaces
+$link-base-color: #1e69d8 !default;
+$link-visited-color: color.adjust($link-base-color, $lightness: -15%) !default;
+$link-hover-color: $text-color !default;
+
+// Bordes
+$border-color-01: color.adjust($brand-color, $lightness: 40%) !default;
+$border-color-02: color.adjust($brand-color, $lightness: 35%) !default;
+$border-color-03: color.adjust($brand-color, $lightness: -25%) !default;
+
+// Tablas
+$table-zebra-color: color.adjust($background-color, $lightness: 4%) !default;
+$table-text-color: color.adjust($heading-color, $lightness: 18%) !default;
+$table-header-bg-color: color.adjust($brand-color, $lightness: 43%) !default;
+$table-header-border: color.adjust($brand-color, $lightness: 37%) !default;
+$table-border-color: $border-color-01 !default;
+
+// Estilos de resaltado (puedes definirlos aquí o importar desde otro archivo)
+.highlight {
+    background-color: $code-background-color;
+    color: $text-color;
+}
