@@ -29,9 +29,9 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+plugins: []
+#   - jekyll-feed
+#   - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -54,7 +54,7 @@ plugins:
 #   - vendor/ruby/
 title: Mi nuevo blog
 description: Blog de prueba para la actividad
-baseurl: ""
+baseurl: "/mi-nuevo-blog"
 url: "http://localhost:4000"
 
 # Desactiva el tema empaquetado y usa tus estilos locales
