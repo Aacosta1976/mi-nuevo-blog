@@ -1,22 +1,29 @@
 ---
-layout: page
+layout: base
 title: Contacto
 permalink: /contacto/
 ---
 
-## Formulario de contacto
+<h1>Formulario de contacto</h1>
+<p>Puedes dejarme un mensaje usando el siguiente formulario:</p>
 
-Puedes dejarme un mensaje usando el siguiente formulario:
+<div class="form-wrapper">
+  <form action="https://formspree.io/f/tu-codigo-aqui" method="POST" class="contact-form">
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+    </div>
 
-<form action="#" method="post">
-  <label for="nombre">Nombre:</label>
-  <input type="text" id="nombre" name="nombre" required>
+    <div class="form-group">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="_replyto" placeholder="ejemplo@correo.com" required>
+    </div>
 
-  <label for="email">Correo electrónico:</label>
-  <input type="email" id="email" name="email" required>
+    <div class="form-group">
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    </div>
 
-  <label for="mensaje">Mensaje:</label>
-  <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-  <button type="submit">Enviar</button>
-</form>
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</div>
