@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <p align="center">
-  <img src="{{ site.baseurl }}/assets/images/Home.png" alt="Imagen de portada del blog" class="cover-image">
+  <img src="{{ site.baseurl }}/assets/Images/Home.png" alt="Imagen de portada del blog" class="cover-image">
 </p>
 
 Bienvenida a mi blog de Ingeniería Informática. Aquí compartiré ideas, prácticas y reflexiones sobre desarrollo web, programación y más.

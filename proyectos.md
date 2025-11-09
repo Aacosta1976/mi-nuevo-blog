@@ -10,7 +10,7 @@ permalink: /proyectos/
 <div class="projects-container">
 
   <section class="project-card">
-    <img src="{{ site.baseurl }}/assets/images/jekyll-blog.png" alt="Blog con Jekyll" class="project-image">
+    <img src="{{ site.baseurl }}/assets/Images/jekyll-blog.png" alt="Blog con Jekyll" class="project-image">
     <h3>Blog con Jekyll</h3>
     <p>Blog estático con diseño personalizado usando HTML, CSS y Sass.</p>
     <ul>
@@ -22,7 +22,7 @@ permalink: /proyectos/
   </section>
 
   <section class="project-card">
-    <img src="{{ site.baseurl }}/assets/images/flutter-app.png" alt="App con Flutter" class="project-image">
+    <img src="{{ site.baseurl }}/assets/Images/flutter-app.png" alt="App con Flutter" class="project-image">
     <h3>Aplicación móvil con Flutter</h3>
     <p>App de recetas saludables con Flutter y Firebase.</p>
     <ul>
@@ -34,7 +34,7 @@ permalink: /proyectos/
   </section>
 
   <section class="project-card">
-    <img src="{{ site.baseurl }}/assets/images/portafolio-creativo.png" alt="Portafolio creativo" class="project-image">
+    <img src="{{ site.baseurl }}/assets/Images/portafolio-creativo.png" alt="Portafolio creativo" class="project-image">
     <h3>Portafolio creativo</h3>
     <p>Portafolio con animaciones y diseño responsivo.</p>
     <ul>
