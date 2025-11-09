@@ -166,3 +166,13 @@ footer {
     background-color: #FFD700;
     color: #003366;
 }
+
+.cover-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
