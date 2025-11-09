@@ -5,9 +5,11 @@ permalink: /proyectos/
 ---
 
 <h1>Proyectos destacados</h1>
+<p>Explora algunos de los proyectos que he desarrollado, desde blogs personalizados hasta aplicaciones móviles y portafolios creativos.</p>
+
 <div class="projects-container">
 
-  <div class="project-card">
+  <section class="project-card">
     <h3>Blog con Jekyll</h3>
     <p>Blog estático con diseño personalizado usando HTML, CSS y Sass.</p>
     <ul>
@@ -15,10 +17,10 @@ permalink: /proyectos/
       <li>Estilos personalizados con Sass</li>
       <li>Formulario de contacto en HTML</li>
     </ul>
-    <a href="#" class="btn">Ver más</a>
-  </div>
+    <a href="{{ site.baseurl }}/proyectos/jekyll/" class="btn" title="Ver más sobre Blog con Jekyll">Ver más</a>
+  </section>
 
-  <div class="project-card">
+  <section class="project-card">
     <h3>Aplicación móvil con Flutter</h3>
     <p>App de recetas saludables con Flutter y Firebase.</p>
     <ul>
@@ -26,10 +28,10 @@ permalink: /proyectos/
       <li>Autenticación y base de datos</li>
       <li>Diseño centrado en el usuario</li>
     </ul>
-    <a href="#" class="btn">Ver más</a>
-  </div>
+   <a href="{{ site.baseurl }}/proyectos/flutter/" class="btn" title="Ver más sobre App con Flutter">Ver más</a>
+  </section>
 
-  <div class="project-card">
+  <section class="project-card">
     <h3>Portafolio creativo</h3>
     <p>Portafolio con animaciones y diseño responsivo.</p>
     <ul>
@@ -37,7 +39,7 @@ permalink: /proyectos/
       <li>Diseño adaptable</li>
       <li>Proyectos reales integrados</li>
     </ul>
-    <a href="#" class="btn">Ver más</a>
-  </div>
+    <a href="{{ site.baseurl }}/proyectos/portafolio/" class="btn" title="Ver más sobre Portafolio creativo">Ver más</a>
+  </section>
 
 </div>
